@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+      <title>agencia de  viagem</title>
+
+      <link rel="stylesheet" href="viagem.css">
+      <script src="viagem.js"></script>
+</head>
+
+<body>
+  <header>
+    <header>
+        <div class="heder">
+            <div class="logo">
+                
+            </div>
+            <nav class="navegar">
+                <a href="#">Home</a>
+                <a href="#VooHotel">Voo + Hotel</a>
+                <a href="#">Aluguel de carros</a>
+                <a href="#voos">voos</a>
+                <a href="#Hospedagem">Hospedagem</a>
+
+                <article class="pesquisar">
+                  <div id="divBusca">
+                    <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                    <button id="btnBusca">Buscar</button>
+                  </div>
+                </article>
+            </nav>
+    </header>
+
+    <article class="cadastro" id=" VooHotel" >
+
+    <div class="container">
+        <h1>Passagens aéreas</h1>
+        <div class="options">
+            <label for="roundtrip">
+                <input type="radio" id="roundtrip" name="tripType" checked>
+                Ida e Volta
+            </label>
+            <label for="oneway">
+                <input type="radio" id="oneway" name="tripType">
+                Só ida
+            </label>
+            <label for="multidestination">
+                <input type="radio" id="multidestination" name="tripType">
+                Multidestino
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="origin">Origem:</label>
+            <div class="input-container">
+                <input type="text" id="origin" placeholder="Insira sua cidade...">
+                <i class="fas fa-search-location"></i>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="destination">Destino:</label>
+            <div class="input-container">
+                <input type="text" id="destination" placeholder="Insira sua cidade...">
+                <i class="fas fa-search-location"></i>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="dates">Datas:</label>
+            <div class="date-input">
+                <input type="date" id="departureDate" placeholder="Ida">
+                <input type="date" id="returnDate" placeholder="Volta">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="passengers">Passageiros e Classe:</label>
+            <div class="passengers-container">
+                <div class="passenger-info">
+                    <i class="fas fa-user"></i>
+                    <span id="passengerCount">1 Pessoa</span>
+                    <span id="passengerClass">Econômica</span> <br> <br>
+                </div>
+                <button id="editPassengers">Editar</button> 
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="search">Buscar:</label>
+            <button id="searchButton">Buscar</button>
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="cheapDate">
+            <label for="cheapDate">Buscar pela data mais barata</label>
+        </div>
+    </div>
+    </article>
+
+    <article class="Destinos"> <br> <br> 
+        <div class="texto-principal"> 
+            <h1 class="texto1">voos</h1>  <br> 
+            <hr>
+        </div>
+
+        <div class="menu">
+
+            <div class="sidebar">
+                <h2 class="Texto2">Destinos</h2> <br> 
+                <p>Domésticos</p>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="aracaju">
+                        <label for="aracaju">Aracaju</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="belem">
+                        <label for="belem">Belém</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="beloHorizonte">
+                        <label for="beloHorizonte">Belo Horizonte</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="boaVista">
+                        <label for="boaVista">Boa Vista</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="brasilia">
+                        <label for="brasilia">Brasília</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="campoGrande">
+                        <label for="campoGrande">Campo Grande</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="cascavel">
+                        <label for="cascavel">Cascavel</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="caxiasDoSul">
+                        <label for="caxiasDoSul">Caxias do Sul</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="chapeco">
+                        <label for="chapeco">Chapecó</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="cuiaba">
+                        <label for="cuiaba">Cuiabá</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="curitiba">
+                        <label for="curitiba">Curitiba</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="florianopolis">
+                        <label for="florianopolis">Florianópolis</label>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </article>
+    <div class="content-destino">
+        <div class="preço">
+            <div class="container-2">
+                <label for="preco" class="label-preco">Preço</label>
+                <div class="range-container">
+                    <span class="range-min">A partir de 120,41</span> <br> <br>
+                    <input type="range" id="preco" name="preco" min="109.59" max="24181.16" value="24181.16">
+                    <span class="range-max" id="ate">ate 8.700,41</span> <br>
+                </div>
+                
+                
+                <section class="lugar" >
+    <header class="hede-2">
+        <h1> Escolha sua proxima vigem </h1>
+    </header>
+
+        <section class="viagem" id="voos">
+          
+            <img src="imagens/aracaju.jpg" alt="Imagem da Viagem">
+            <div class="info-viagem">
+                <h2>De [SAO PAULO] a [Aracaju]</h2>
+                <p>Somente ida</p>
+                <p class="preco">BRL 120,41</p>
+                <p>Taxas incluídas - Voo direto</p>
+                <button class="ver-mais">Ver Mais</button>
+            </div>
+        </section>
+
+        <section class="viagem-2">
+            <img src="imagens/belem.jpg" alt=" viagem-2"> <br> <br>
+            <div class="info-viagem">
+                <h2>De [SAO PAULO] a [BELEM]</h2>
+                <p>Somente ida</p>
+                <p class="preco">BRL 120,41</p>
+                <p>Taxas incluídas - Voo direto</p>
+                <button class="ver-mais">Ver Mais</button>
+            </div>
+            </section>
+
+            <section class="viagem-3"><br> <br>
+                <img src="imagens/belo hirisonte.jpg" alt="viagem-3"> 
+            <div class="info-viagem">
+                <h2>De [SAO PAULO] a [BELO HIRISONTE]</h2>
+                <p>Somente ida</p>
+                <p class="preco">BRL 120,41</p>
+                <p>Taxas incluídas - Voo direto</p>
+                <button class="ver-mais">Ver Mais</button>
+            </div>
+            </section>
+
+            <section class="viagem-4">
+                <img src="imagens/RJ.jpg" alt=" Viagem-4">
+            <div class="info-viagem">
+                <h2>De [SAO PAULO] a [Rio de Janeiro]</h2>
+                <p>Somente ida</p>
+                <p class="preco">BRL 120,41</p>
+                <p>Taxas incluídas - Voo direto</p>
+                <button class="ver-mais">Ver Mais</button>
+            </div>
+            </section>
+
+<section class="Multiple-Slides" id="Hospedagem">
+    <div class="container-3">
+        <div class="slider">
+          <div class="slide active"><img src="imagens/hotel 1.jpg" alt="hospedagem1"></div>
+          <div class="slide hidden"><img src="imagens/hotel 2.jpg" alt="hospedagem2"></div>
+          <div class="slide hidden"><img src="imagens/hotel 3.jpg" alt="hospedagem3"></div>
+          <div class="nav-slide">
+            <button class="prev">&lt;</button>
+            <div class="dots">
+              <div class="dot active"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <button class="next">&gt;</button>
+          </div>
+        </div>
+      </div>
+    
+        
+</section>
+
+<article class="Roda-PE">
+    <footer class="roda">
+        <div class="container-4">
+            <h2>Inscreva-se para receber ofertas exclusivas</h2>
+            <form >
+              <div class="input-group">
+                <label for="email" class="labe">Insira seu e-mail:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+              </div>
+              <button type="submit">Quero recebê-las!</button>
+            </form>
+            <p class="Texto4">Você receberá e-mails promocionais sobre viagens. Para mais informações, consulte  as políticas de privacidade</p>
+          </div>
+    </footer>
+</article>
+
+</body>
+
+</html>
